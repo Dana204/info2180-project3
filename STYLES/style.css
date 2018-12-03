@@ -4,6 +4,7 @@
     --yellow: #ebdb1c;
     --offWhite: #f4f5f7;
     --inputBackground: #fbfbfb;
+    --lightGray: #999;
     --white: #fff;
     --black: #000;
     --offBlack: #252525;
@@ -27,8 +28,8 @@ header {
 /* NAVBAR */
 nav {
     float: left;
-    min-height: 86vh;
-    width: 15rem;
+    min-height: 100vh;
+    width: 13%;
     background-color: var(--offWhite);
     /* padding: top left bottom right; */
     padding: 1.8rem 2rem 0.5rem 0rem;
@@ -58,8 +59,9 @@ nav {
 
 /* MAIN */
 .main {
-    display: flex;
-    justify-content: flex-start;
+    /* display: flex;
+    justify-content: flex-start; */
+    margin-left: 15%;
     padding-top: 1rem;
     padding-left: 2rem;
 }
@@ -69,11 +71,21 @@ nav {
     font-size: 1.5rem;
 }
 
+.title {
+    display: inline-block;
+    margin-right: 34rem;
+    margin-bottom: 1rem;
+}
+
 .btn {
     padding: 0.5rem 2.8rem;
     color: var(--white);
     border-radius: 5px;
     text-decoration: none;
+}
+
+.green-btn{
+    background-color: var(--green);
 }
 
 .form-field {
@@ -105,41 +117,70 @@ nav {
 
 
 /* MAIN FOR DASHBOARD */
-.title {
-    display: block!important;
-}
-
-.job-btn{
-    background-color: var(--green);
+.heading2 {
+    font-size: 1rem;
 }
 
 table {
     border-collapse: collapse;
     text-align: left;
     margin-bottom: 2rem;
+    font-size: 1rem;
 }
 
 .table-heading{
     background-color: var(--offWhite);
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
-    /* padding-right: 0.8rem; */
 }
 
-td {
-    /* padding: top left bottom right; */
+tr {
+    border-bottom: 2px solid var(--inputBackground);
+}
+
+td,th {
     padding: 0.5rem;
 }
 
+.date {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+.new {
+    background-color: var(--yellow);
+    display: inline;
+    padding: 1px;
+}
+
 .blue {
-    color: --b ;
+    color: var(--blue);
 }
 
 /* MAIN FOR CREATE_JOB */
 .form-field select{
-    /* padding: 0.rem; */
     height: 2.8rem;
     width: 26rem;
     border: 3px solid var(--offWhite) !important;
     box-shadow: 0 -5px 5px -5px var(--offBlack)!important;
 }
 
+/* MAIN FOR VIEW_JOBS */
+.container {
+    /* padding-right: 1rem; */
+    width: 900px;
+}
+
+.main-header {
+    border-bottom: 2px solid var(--offWhite);
+}
+
+.muted {
+    color: var(--lightGray);
+}
+
+.text {
+    margin-top: -20px;
+}
+
+.br {
+    padding-bottom: 2px;
+}
