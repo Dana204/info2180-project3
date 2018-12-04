@@ -26,62 +26,62 @@
     <header class="header">
         <h1>HireMe</h1>
     </header>
+    
+    <section>
+        <!-- NAVBAR -->
+        <nav class="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <i class="fas fa-home icon"></i>
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-user-plus icon"></i>
+                    <a href="#">Add User</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-edit icon"></i>
+                    <a href="#">New Job</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-power-off icon"></i>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </nav>
 
-    <!-- NAVBAR -->
-    <nav class="nav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <i class="fas fa-home icon"></i>
-                <a href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <i class="fas fa-user-plus icon"></i>
-                <a href="#">Add User</a>
-            </li>
-            <li class="nav-item">
-                <i class="fas fa-edit icon"></i>
-                <a href="#">New Job</a>
-            </li>
-            <li class="nav-item">
-                <i class="fas fa-power-off icon"></i>
-                <a href="#">Logout</a>
-            </li>
-        </ul>
-    </nav>
+        <!-- MAIN CONTENT -->
+        <div class="main">
+            <div class="container">
+                <h1>New User</h1>
 
-    <!-- MAIN CONTENT -->
-    <div class="main">
-        <div class="container">
-        <h1>New User</h1>
+                <form action="" class="add-user-form">
+                    <div class="form-field">
+                        <label for="fname"> Firstname</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div class="form-field">
+                        <label for="lname"> Lastname </label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                    <div class="form-field">
+                        <label for="password"> Password </label>
+                        <input type="text" name="password" id="password">
+                    </div>
+                    <div class="form-field">
+                        <label for="email"> Email </label>
+                        <input type="email" name="email" id="email" placeholder="eg. example@gmail.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone"> Telephone </label>
+                        <input type="text" name="phone" id="phone" placeholder="eg. 876-875-3883">
+                    </div>
 
-        <form action="" class="add-user-form">
-            <div class="form-field">
-                <label for="fname"> Firstname</label>
-                <input type="text" name="fname" id="fname">
+                    <a href="#" type="submit" class="submit-btn btn">Submit</a>
+                </form>
             </div>
-            <div class="form-field">
-                <label for="lname"> Lastname </label>
-                <input type="text" name="lname" id="lname">
-            </div>
-            <div class="form-field">
-                <label for="password"> Password </label>
-                <input type="text" name="password" id="password">
-            </div>
-            <div class="form-field">
-                <label for="email"> Email </label>
-                <input type="email" name="email" id="email" placeholder="eg. example@gmail.com">
-            </div>
-            <div class="form-field">
-                <label for="phone"> Telephone </label>
-                <input type="text" name="phone" id="phone" placeholder="eg. 876-875-3883">
-            </div>
-
-            <a href="#" type="submit" class="submit-btn btn">Submit</a>
-        </form>
         </div>
-
-    </div>
-
+    </section>
     
 </body>
 </html>
