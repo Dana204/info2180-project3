@@ -13,7 +13,7 @@
 body {
     margin: 0rem;
     font-family: 'Noto Sans SC', sans-serif;
-    height: 100%;
+    /* height: 100%; */
 }
 
 header {
@@ -93,6 +93,9 @@ nav {
     background-color: var(--green);
 }
 
+form {
+    padding: 10px;
+}
 .form-field {
     margin-bottom: 1.8rem;
 }
@@ -118,6 +121,7 @@ nav {
 /* MAIN FOR ADD_USER */
 .submit-btn{
     background-color: var(--blue);
+    margin-bottom: 5px;
 }
 
 
@@ -188,8 +192,4 @@ td,th {
 
 .br {
     padding-bottom: 2px;
-}
-
-.error{
-    color: red;
 }

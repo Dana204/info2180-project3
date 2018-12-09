@@ -1,3 +1,5 @@
+<?php include('jobs.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,7 @@
      <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">   
 
      <!-- CSS link -->
-     <link rel="stylesheet" type="text/css" href="../Project 3/STYLES/style.css">
+     <link rel="stylesheet" type="text/css" href="style.css">
 
      <!-- JSCRIPT/JQUERY -->
      <script src="https://code.jquery.com/jquery-3.1.1.min.js"    type="text/javascript"></script>
@@ -55,29 +57,40 @@
             <div class="container">
                 <h1>New User</h1>
 
-                <form action="" class="add-user-form">
+                <form action = "<?= $_SERVER['PHP_SELF']; ?>" class="add-user-form" method = "POST">
                     <div class="form-field">
                         <label for="fname"> Firstname</label>
-                        <input type="text" name="fname" id="fname">
+                        <input type="text" name="firstname" id="firstname" value = <?=$firstname ?>>
+                        <span class = "error"> <?= $fname_error ?></span>
                     </div>
                     <div class="form-field">
                         <label for="lname"> Lastname </label>
-                        <input type="text" name="lname" id="lname">
+                        <input type="text" name="lastname" id="lastname" value = <?=$lastname ?>>
+                        <span class = "error"> <?= $lname_error ?></span>
                     </div>
                     <div class="form-field">
                         <label for="password"> Password </label>
-                        <input type="text" name="password" id="password">
+                        <input type="password" name="password" id="password" value = <?=$password ?> >
+                        <span class = "error"> <?= $password_error ?></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="password"> Confirm Password </label>
+                        <input type="password" name="password1" id="password1" value = <?=$password1 ?>>
+                        <span class = "error"> <?= $password1_error ?></span>
                     </div>
                     <div class="form-field">
                         <label for="email"> Email </label>
-                        <input type="email" name="email" id="email" placeholder="eg. example@gmail.com">
+                        <input type="text" name="email" id="email" placeholder="eg. example@gmail.com" value = <?=$email ?>>
+                        <span class = "error"> <?= $email_error ?></span>
                     </div>
                     <div class="form-field">
                         <label for="phone"> Telephone </label>
-                        <input type="text" name="phone" id="phone" placeholder="eg. 876-875-3883">
+                        <input type="text" name="telephone" id="phone" placeholder="eg. 876-875-3883" value = <?=$telephone ?>>
+                        <span class = "error"> <?= $tel_error ?></span>
                     </div>
 
-                    <a href="#" type="submit" class="submit-btn btn">Submit</a>
+                    <!--<a href="#" type="submit" class="submit-btn btn">Submit</a>-->
+                    <button name = "submit" type="submit" class="submit-btn btn">Submit</button> 
                 </form>
             </div>
         </div>
